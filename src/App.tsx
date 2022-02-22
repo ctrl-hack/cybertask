@@ -60,7 +60,7 @@ function App() {
           </p>
           <p>
             <span className="Product">Free shipping:</span>{" "}
-            {d.isFreeShipping ?? "Yes"}
+            {d.isFreeShipping ? "Yes" : ""}
           </p>
           <button onClick={() => handleSubmit(d)}>Add</button>
         </div>
